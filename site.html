@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trivono Now | Fresh Pasta Shop &amp; Italian Kitchen</title>
+<meta name="description" content="Trivono Now is a neighborhood pasta shop crafting fresh handmade noodles, sauces, and ready meals. Browse our pasta types, kitchen story, reviews, and pasta guides.">
+<meta name="keywords" content="pasta shop, fresh pasta, handmade noodles, italian kitchen, trivononow, pasta delivery, pasta guides, pasta recipes">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Trivono Now | Fresh Pasta Shop">
+<meta property="og:description" content="Fresh handmade pasta, sauces, and ready meals made daily in our neighborhood kitchen.">
+<meta property="og:type" content="website">
+<style>
+/* ===== Trivono Now unique style block (suffix x7k2q) ===== */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Georgia,'Times New Roman',serif;
+  background:#fbf6ee;
+  color:#3b2a1a;
+  line-height:1.7;
+  font-size:17px;
+}
+a{color:#7a4a1e;text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* layout helpers */
+.wrap_x7k2q{max-width:1180px;margin:0 auto;padding:0 22px}
+.grid_x7k2q{display:grid;gap:26px}
+.two_x7k2q{grid-template-columns:1fr 1fr}
+.three_x7k2q{grid-template-columns:repeat(3,1fr)}
+.four_x7k2q{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.two_x7k2q,.three_x7k2q,.four_x7k2q{grid-template-columns:1fr}}
+img{max-width:100%;height:auto;display:block;border-radius:10px}
+
+/* topbar / nav */
+.topbar_x7k2q{
+  position:sticky;top:0;z-index:90;
+  background:#2c1810;
+  border-bottom:3px solid #c89b3c;
+  box-shadow:0 2px 8px rgba(0,0,0,.18);
+}
+.nav_inner_x7k2q{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:14px 0}
+.brand_x7k2q{color:#f3e6cf;font-size:24px;font-weight:bold;letter-spacing:.5px}
+.brand_x7k2q span{color:#e0b248}
+.nav_links_x7k2q{display:flex;gap:6px;flex-wrap:wrap}
+.nav_links_x7k2q a{
+  color:#f3e6cf;font-size:13px;
+  background:#3d2517;padding:7px 11px;border-radius:6px;
+  font-family:Arial,Helvetica,sans-serif;transition:background .15s;
+}
+.nav_links_x7k2q a:hover{background:#c89b3c;color:#2c1810;text-decoration:none}
+
+/* hero */
+.hero_x7k2q{
+  background:linear-gradient(rgba(44,24,16,.55),rgba(44,24,16,.72)),
+    url('https://images.pexels.com/photos/1438672/pexels-photo-1438672.jpeg') center/cover no-repeat;
+  color:#f7ecd8;text-align:center;padding:96px 22px 104px;
+}
+.hero_x7k2q h1{font-size:46px;margin-bottom:18px;text-shadow:0 3px 10px rgba(0,0,0,.5)}
+.hero_x7k2q p{font-size:20px;max-width:680px;margin:0 auto 26px}
+.btn_x7k2q{
+  display:inline-block;background:#c89b3c;color:#2c1810;
+  padding:13px 28px;border-radius:8px;font-weight:bold;
+  font-family:Arial,Helvetica,sans-serif;font-size:16px;
+}
+.btn_x7k2q:hover{background:#e0b248;text-decoration:none}
+
+/* section base */
+.section_x7k2q{padding:64px 0}
+.section_x7k2q.alt_x7k2q{background:#f3ead6}
+.sec_title_x7k2q{font-size:34px;color:#2c1810;text-align:center;margin-bottom:10px}
+.sec_sub_x7k2q{text-align:center;color:#6b4a2a;margin-bottom:42px;font-style:italic}
+
+/* card */
+.card_x7k2q{
+  background:#fff;border:1px solid #e8dcc4;border-radius:12px;
+  padding:22px;box-shadow:0 3px 12px rgba(120,90,40,.08);
+}
+.card_x7k2q h3{color:#7a4a1e;margin-bottom:10px;font-size:21px}
+.card_x7k2q p{font-size:15px;color:#4a3a28}
+
+/* history timeline */
+.timeline_x7k2q{position:relative;border-left:3px solid #c89b3c;padding-left:30px;margin:10px auto;max-width:760px}
+.tl_item_x7k2q{margin-bottom:30px;position:relative}
+.tl_item_x7k2q:before{
+  content:'';position:absolute;left:-39px;top:6px;width:16px;height:16px;
+  background:#c89b3c;border:3px solid #fbf6ee;border-radius:50%;
+}
+.tl_item_x7k2q h3{color:#2c1810;margin-bottom:6px}
+.tl_item_x7k2q .yr_x7k2q{color:#7a4a1e;font-weight:bold;font-size:14px}
+
+/* reviews */
+.rev_x7k2q{background:#fff;border-radius:12px;padding:24px;border-left:5px solid #c89b3c;box-shadow:0 3px 10px rgba(120,90,40,.07)}
+.rev_x7k2q .stars_x7k2q{color:#e0b248;font-size:18px;margin-bottom:8px}
+.rev_x7k2q .who_x7k2q{font-weight:bold;color:#2c1810;margin-top:10px;font-family:Arial,Helvetica,sans-serif}
+.rev_x7k2q .loc_x7k2q{color:#8a6a45;font-size:13px}
+
+/* feature banner block */
+.banner_x7k2q{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(120,90,40,.12)}
+.banner_x7k2q img{height:100%;border-radius:0;min-height:320px;object-fit:cover}
+.banner_x7k2q .txt_x7k2q{padding:42px;background:#3d2517;color:#f3e6cf}
+.banner_x7k2q .txt_x7k2q h2{color:#e0b248;margin-bottom:14px;font-size:30px}
+@media(max-width:900px){.banner_x7k2q{grid-template-columns:1fr}}
+
+/* table */
+.tbl_x7k2q{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden}
+.tbl_x7k2q th{background:#7a4a1e;color:#fff;padding:13px;text-align:left;font-family:Arial,Helvetica,sans-serif}
+.tbl_x7k2q td{padding:13px;border-bottom:1px solid #e8dcc4}
+.tbl_x7k2q tr:last-child td{border-bottom:none}
+
+/* faq */
+.faq_x7k2q details{background:#fff;border:1px solid #e8dcc4;border-radius:10px;padding:16px 20px;margin-bottom:12px;cursor:pointer}
+.faq_x7k2q summary{font-weight:bold;color:#2c1810;font-size:18px}
+.faq_x7k2q details p{margin-top:10px;color:#4a3a28}
+
+/* stats */
+.stat_x7k2q{text-align:center;padding:20px}
+.stat_x7k2q .num_x7k2q{font-size:42px;color:#c89b3c;font-weight:bold;font-family:Arial,Helvetica,sans-serif}
+.stat_x7k2q .lbl_x7k2q{color:#5b4a36;text-transform:uppercase;letter-spacing:1px;font-size:13px}
+
+/* footer */
+.footer_x7k2q{background:#2c1810;color:#d8c8a8;padding:48px 0 24px}
+.footer_x7k2q h4{color:#e0b248;margin-bottom:14px;font-size:18px}
+.footer_x7k2q a{color:#d8c8a8}
+.footer_x7k2q ul{list-style:none}
+.footer_x7k2q li{margin-bottom:8px}
+.footer_x7k2q .phone_x7k2q{font-size:22px;color:#e0b248;font-weight:bold;font-family:Arial,Helvetica,sans-serif}
+.bottombar_x7k2q{border-top:1px solid #4d3526;margin-top:34px;padding-top:18px;text-align:center;font-size:13px;color:#a89878}
+
+/* popup */
+.overlay_x7k2q{
+  display:none;position:fixed;inset:0;background:rgba(20,12,6,.75);
+  z-index:120;align-items:flex-start;justify-content:center;padding:40px 18px;overflow-y:auto;
+}
+.overlay_x7k2q.show_x7k2q{display:flex}
+.modal_x7k2q{
+  background:#fbf6ee;max-width:760px;width:100%;border-radius:14px;
+  padding:34px;position:relative;border-top:6px solid #c89b3c;
+}
+.modal_x7k2q h2{color:#2c1810;margin-bottom:6px}
+.modal_x7k2q .close_x7k2q{
+  position:absolute;top:14px;right:18px;font-size:30px;color:#7a4a1e;
+  cursor:pointer;background:none;border:none;line-height:1;
+}
+.modal_x7k2q h3{color:#7a4a1e;margin:22px 0 8px;font-size:19px}
+.modal_x7k2q p{margin-bottom:12px;font-size:15px}
+
+/* list inside sections */
+.minilist_x7k2q{list-style:none;margin-top:12px}
+.minilist_x7k2q li{padding:6px 0;border-bottom:1px dashed #e0d4bc;font-size:15px}
+.minilist_x7k2q li:last-child{border-bottom:none}
+
+.tag_x7k2q{display:inline-block;background:#f0e2c4;color:#7a4a1e;padding:3px 10px;border-radius:20px;font-size:12px;font-family:Arial,Helvetica,sans-serif;margin:3px}
+</style>
+</head>
+<body>
+
+<!-- ===== TOP NAVIGATION (trivononow) ===== -->
+<header class="topbar_x7k2q">
+  <div class="wrap_x7k2q nav_inner_x7k2q">
+    <div class="brand_x7k2q">Trivono<span>Now</span></div>
+    <nav class="nav_links_x7k2q" aria-label="Main navigation">
+      <a href="#pasta_x7k2q">Pasta Types</a>
+      <a href="#sauces_x7k2q">House Sauces</a>
+      <a href="#meals_x7k2q">Ready Meals</a>
+      <a href="#story_x7k2q">Our Story</a>
+      <a href="#history_x7k2q">History</a>
+      <a href="#craft_x7k2q">The Craft</a>
+      <a href="#wheat_x7k2q">Wheat &amp; Grain</a>
+      <a href="#pairing_x7k2q">Pairing Guide</a>
+      <a href="#seasonal_x7k2q">Seasonal Menu</a>
+      <a href="#kitchen_x7k2q">Kitchen Team</a>
+      <a href="#guides_x7k2q">Pasta Guides</a>
+      <a href="#reviews_x7k2q">Reviews</a>
+      <a href="#faq_x7k2q">FAQ</a>
+      <a href="#contact_x7k2q">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero_x7k2q" id="home_x7k2q">
+  <h1>Trivono Now &mdash; Fresh Pasta, Made Daily</h1>
+  <p>A neighborhood pasta shop rolling, cutting, and cooking handmade noodles and sauces every morning. From slow-simmered rag&ugrave; to feather-light ravioli, our kitchen turns simple grain into comfort you can taste.</p>
+  <a class="btn_x7k2q" href="#pasta_x7k2q">Explore the Pasta Counter</a>
+</section>
+
+<!-- ===== PASTA TYPES ===== -->
+<section class="section_x7k2q" id="pasta_x7k2q">
+  <div class="wrap_x7k2q">
+    <h2 class="sec_title_x7k2q">Pasta Types We Roll</h2>
+    <p class="sec_sub_x7k2q">Each shape is cut fresh in small batches, never dried into glass.</p>
+    <div class="grid_x7k2q three_x7k2q">
+      <div class="card_x7k2q">
+        <img loading="lazy" src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg" alt="Long ribbons of fresh tagliatelle on a wooden board">
+        <h3>Tagliatelle Ribbons</h3>
+        <p>Hand-cut long ribbons, broad enough to cradle a slow meat rag&ugrave;. We rest the dough overnight so each strand stays tender with a gentle bite at the center.</p>
+        <span class="tag_x7k2q">Long cut</span><span class="tag_x7k2q">Egg dough</span>
+      </div>
+      <div class="card_x7k2q">
+        <img loading="lazy" src="https://images.pexels.com/photos/1487511/pexels-photo-1487511.jpeg" alt="Short twisted fusilli pasta pieces">
+        <h3>Fusilli Coils</h3>
+        <p>Tight coils spun by hand that trap chunky vegetable sauces in every spiral. The grooves hold onto pesto and crushed tomato like tiny edible pockets.</p>
+        <span class="tag_x7k2q">Short cut</span><span class="tag_x7k2q">Semolina</span>
+      </div>
+      <div class="card_x7k2q">
+        <img loading="lazy" src="https://images.pexels.com/photos/4193883/pexels-photo-4193883.jpeg" alt="Soft ravioli parcels filled and ready to cook">
+        <h3>Ravioli Parcels</h3>
+        <p>Thin sheets folded around ricotta and herb fillings, pressed by hand and trimmed with a crimped wheel. Each parcel is a sealed envelope of warmth.</p>
+        <span class="tag_x7k2q">Filled</span><span class="tag_x7k2q">Daily made</span>
+      </div>
+      <div class="card_x7k2q">
+        <img loading="lazy" src="https://images.pexels.com/photos/3338497/pexels-photo-3338497.jpeg" alt="Round gnocchi dumplings dusted with flour">
+        <h3>Gnocchi Pillows</h3>
+        <p>Soft potato dumplings rolled and ridged with a fork so the sauce clings to every groove. Light as a whisper when cooked right and tossed in butter sage.</p>
+        <span class="tag_x7k2q">Potato</span><span class="tag_x7k2q">Soft bite</span>
+      </div>
+      <div class="card_x7k2q">
+        <img loading="lazy" src="https://images.pexels.com/photos/6489663/pexels-photo-6489663.jpeg" alt="Tube shaped penne pasta in a bowl">
+        <h3>Penne Tubes</h3>
+        <p>Diagonally cut tubes with ridged walls built for thick, hearty sauces. The hollow center fills with every spoonful, carrying flavor from plate to palate.</p>
+        <span class="tag_x7k2q">Short cut</span><span class="tag_x7k2q">Ridged</span>
+      </div>
+      <div class="card_x7k2q">
+        <img loading="lazy" src="https://images.pexels.com/photos/3771085/pexels-photo-3771085.jpeg" alt="Thin round spaghetti strands gathered in a nest">
+        <h3>Spaghetti Nests</h3>
+        <p>Fine round strands drawn by bronze dies for a rough surface that grips sauce. Classic comfort that twirls around a fork and never slides away.</p>
+        <span class="tag_x7k2q">Long cut</span><span class="tag_x7k2q">Bronze cut</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOUSE SAUCES ===== -->
+<section class="section_x7k2q alt_x7k2q" id="sauces_x7k2q">
+  <div class="wrap_x7k2q">
+    <h2 class="sec_title_x7k2q">House Sauces Simmered Slow</h2>
+    <p class="sec_sub_x7k2q">Every pot is stirred by hand and reduced until the flavor stands on its own.</p>
+    <div class="grid_x7k2q two_x7k2q">
+      <div class="card_x7k2q">
+        <img loading="lazy" src="https://images.pexels.com/photos/2092065/pexels-photo-2092065.jpeg" alt="Rich red tomato sauce being stirred in a copper pot">
+        <h3>Slow Tomato &amp; Basil</h3>
+        <p>Ripe tomatoes cooked down for hours with a sprig of basil and a thread of olive oil. Bright, gentle, and rounded, this is the sauce that taught the kitchen patience. We never rush the reduction, letting the water drift away until only velvet remains.</p>
+      </div>
+      <div class="card_x7k2q">
+        <img loading="lazy" src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" alt="Hearty meat ragu sauce in a deep pan">
+        <h3>Hearty Sunday Rag&ugrave;</h3>
+        <p>Ground meat browned, then bathed in tomato and cooked low until it falls apart. A sauce with a memory of every Sunday table. Carrots and celery melt into the base so no single ingredient shouts louder than the rest.</p>
+      </div>
+      <div class="card_x7k2q">
+        <img loading="lazy" src="https://images.pexels.com/photos/3219483/pexels-photo-3219483.jpeg" alt="Green basil pesto sauce blended with oil">
+        <h3>Basil Pesto</h3>
+        <p>Fresh basil leaves pounded with pine kernels, hard cheese, and olive oil into a fragrant green paste. Best folded through warm gnocchi. We crush rather than chop so the oils release slowly and the color stays vivid.</p>
+      </div>
+      <div class="card_x7k2q">
+        <img loading="lazy" src="https://images.pexels.com/photos/4040707/pexels-photo-4040707.jpeg" alt="Creamy white sauce with herbs in a bowl">
+        <h3>Garlic &amp; Herb Cream</h3>
+        <p>A smooth white sauce built on a careful roux, lifted with garlic and garden herbs. Coats long ribbons without ever feeling heavy. A squeeze of lemon at the end brightens the whole pan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== READY MEALS ===== -->
+<section class="section_x7k2q" id="meals_x7k2q">
+  <div class="wrap_x7k2q">
+    <h2 class="sec_title_x7k2q">Ready Meals From the Counter</h2>
+    <p class="sec_sub_x7k2q">Take a warm tray home &mdash; the kitchen has already done the stirring.</p>
+    <div class="banner_x7k2q">
+      <img loading="lazy" src="https://images.pexels.com/photos/8473010/pexels-photo-8473010.jpeg" alt="A baked pasta dish with golden cheese topping">
+      <div class="txt_x7k2q">
+        <h2>Golden Baked Trays</h2>
+        <p>Layers of fresh pasta, slow sauce, and grated cheese baked until the top turns golden and crisp at the edges. Each tray is assembled to order and slipped into the oven, so the center stays molten while the crust crackles. Carry it home while it is still warm and the whole kitchen will follow the smell.</p>
+        <p>Our baked trays rotate with the seasons &mdash; root vegetables in colder months, garden tomatoes and zucchini when the weather warms. Ask the counter which tray came out of the oven most recently.</p>
+      </div>
+    </div>
+    <div class="grid_x7k2q three_x7k2q" style="margin-top:30px">
+      <div class="card_x7k2q"><h3>Spinach &amp; Ricotta Bake</h3><p>Soft ravioli folded with spinach and ricotta,blanketed in cream sauce and baked until bubbling at the rim.</p></div>
+      <div class="card_x7k2q"><h3>Meatball Penne Tray</h3><p>Hand-rolled meatballs nestled among ridged penne and Sunday rag&ugrave;, finished with a snowfall of cheese.</p></div>
+      <div class="card_x7k2q"><h3>Garden Vegetable Bake</h3><p>Seasonal vegetables, short pasta, and tomato sauce layered and baked with a crumbly herb top.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OUR STORY (description) ===== -->
+<section class="section_x7k2q alt_x7k2q" id="story_x7k2q">
+  <div class="wrap_x7k2q">
+    <h2 class="sec_title_x7k2q">Our Story</h2>
+    <p class="sec_sub_x7k2q">Trivono Now began with a single rolling pin and a borrowed stove.</p>
+    <div class="grid_x7k2q two_x7k2q">
+      <div>
+        <img loading="lazy" src="https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg" alt="Hands kneading fresh pasta dough on a floury surface">
+      </div>
+      <div>
+        <p>Trivono Now is a small pasta shop that treats the daily dough as the heart of everything we do. Our kitchen starts before sunrise, mixing flour and eggs in a wide wooden trough, kneading until the mass turns smooth and elastic, then letting it rest while the ovens warm. We believe a bowl of pasta is a quiet kind of comfort, the sort that asks nothing more than a hungry table and a little patience.</p>
+        <p>Our shelves hold shapes cut by hand and by bronze die, sauces that have simmered for the better part of a morning, and ready trays built for carrying home. We source grain from regional mills, tomatoes from growers who pick at peak ripeness, and herbs from a small garden bed behind the shop. Nothing here is rushed, and nothing leaves the counter that we would not eat ourselves.</p>
+        <p>The name Trivono Now was chosen to capture the feeling of a corner kitchen &mdash; a place where the food is ready now, warm now, waiting now. We are not chasing trends or grand titles. We are simply rolling, cutting, and cooking, day after day, for neighbors who keep coming back for the same familiar bowl.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BUSINESS HISTORY ===== -->
+<section class="section_x7k2q" id="history_x7k2q">
+  <div class="wrap_x7k2q">
+    <h2 class="sec_title_x7k2q">Our History</h2>
+    <p class="sec_sub_x7k2q">A timeline of flour, fire, and a growing neighborhood table.</p>
+    <div class="timeline_x7k2q">
+      <div class="tl_item_x7k2q">
+        <div class="yr_x7k2q">2009 &mdash; The First Rolling Pin</div>
+        <h3>A borrowed stove and a single recipe</h3>
+        <p>The shop opened in a narrow storefront with one counter, one stove, and a recipe for tagliatelle handed down through three generations. The first morning produced enough noodles for a dozen bowls, and they sold out before noon.</p>
+      </div>
+      <div class="tl_item_x7k2q">
+        <div class="yr_x7k2q">2012 &mdash; The Bronze Die</div>
+        <h3>Adding short cuts and ridged shapes</h3>
+        <p>A second-hand bronze extruder arrived in a borrowed van, letting us add fusilli, penne, and rigatoni to the daily rotation. The rough surface of bronze-cut pasta changed how our sauces clung, and regulars noticed the difference immediately.</p>
+      </div>
+      <div class="tl_item_x7k2q">
+        <div class="yr_x7k2q">2015 &mdash; The Garden Bed</div>
+        <h3>Herbs grown behind the shop</h3>
+        <p>We turned a strip of cracked pavement behind the kitchen into a raised herb bed. Basil, sage, rosemary, and oregano now travel only a few steps from soil to saucepan, picked the same morning they are cooked.</p>
+      </div>
+      <div class="tl_item_x7k2q">
+        <div class="yr_x7k2q">2018 &mdash; The Ready Tray Counter</div>
+        <h3>Baked meals to carry home</h3>
+        <p>Neighbors kept asking for something they could take home already warm, so we built a small bake counter. The first golden tray of baked penne sold out in an afternoon, and the ready meals became a staple of the shop.</p>
+      </div>
+      <div class="tl_item_x7k2q">
+        <div class="yr_x7k2q">2021 &mdash; The Wheat Project</div>
+        <h3>Partnering with regional mills</h3>
+        <p>We began working with two regional stone mills to source grain grown within a short distance of the shop. Fresh-milled flour brought a deeper color and a livelier flavor to the dough, and we have never gone back.</p>
+      </div>
+      <div class="tl_item_x7k2q">
+        <div class="yr_x7k2q">Today &mdash; Trivono Now</div>
+        <h3>The same rolling pin, a fuller table</h3>
+        <p>The kitchen still starts before sunrise, the dough still rests overnight, and the rolling pin from the first morning still hangs above the counter. What began as a dozen bowls now fills a neighborhood table, but the hands and the patience have not changed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE CRAFT ===== -->
+<section class="section_x7k2q alt_x7k2q" id="craft_x7k2q">
+  <div class="wrap_x7k2q">
+    <h2 class="sec_title_x7k2q">The Craft Behind Every Strand</h2>
+    <p class="sec_sub_x7k2q">A closer look at how dough becomes dinner.</p>
+    <div class="grid_x7k2q three_x7k2q">
+      <div class="card_x7k2q"><h3>1. The Mix</h3><p>Flour is mounded on a wooden board, a well is pressed into the center, and eggs are cracked inside. We fold the flour in slowly with a fork until a shaggy dough forms, then bring it together by hand.</p></div>
+      <div class="card_x7k2q"><h3>2. The Knead</h3><p>The dough is pushed, folded, and turned for a full ten minutes until it turns smooth and springs back at the touch. This is where the structure is built, strand by strand.</p></div>
+      <div class="card_x7k2q"><h3>3. The Rest</h3><p>Wrapped and set aside, the dough relaxes so the gluten softens. A rested dough rolls thin without springing back, the secret to a tender final bite.</p></div>
+      <div class="card_x7k2q"><h3>4. The Roll</h3><p>Passed through graduated rollers, the dough thins to a translucent sheet. We dust with semolina between passes so nothing sticks and nothing tears.</p></div>
+      <div class="card_x7k2q"><h3>5. The Cut</h3><p>Sheets are trimmed and cut by hand or bronze die into the day&rsquo;s shapes. Each cut is checked for width and edge, then dusted again to keep the pieces separate.</p></div>
+      <div class="card_x7k2q"><h3>6. The Cook</h3><p>Dropped into well-salted rolling water for a brief, bright minute. Fresh pasta cooks in a fraction of the time, and we drain it while it still has a gentle heart.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHEAT & GRAIN ===== -->
+<section class="section_x7k2q" id="wheat_x7k2q">
+  <div class="wrap_x7k2q">
+    <h2 class="sec_title_x7k2q">Wheat &amp; Grain Notes</h2>
+    <p class="sec_sub_x7k2q">Where the flour comes from and why it matters.</p>
+    <div class="grid_x7k2q two_x7k2q">
+      <div class="card_x7k2q">
+        <img loading="lazy" src="https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg" alt="Wheat grains and flour on a rustic table">
+        <h3>Stone-Milled Soft Wheat</h3>
+        <p>Our egg dough begins with stone-milled soft wheat from a regional mill that grinds slowly and cool, keeping the grain&rsquo;s natural oils intact. The flour arrives fresh each week, never sitting in a warehouse, and you can taste the difference in the color of the dough &mdash; a warm gold rather than a flat white.</p>
+      </div>
+      <div class="card_x7k2q">
+        <img loading="lazy" src="https://images.pexels.com/photos/4198021/pexels-photo-4198021.jpeg" alt="Semolina flour and durum wheat kernels">
+        <h3>Durum Semolina for Short Cuts</h3>
+        <p>For our short, bronze-cut shapes we use durum semolina, a harder grain that holds its shape in the water and gives a firm, satisfying bite. The semolina is sifted to a consistent granule so every batch extrudes evenly through the dies.</p>
+      </div>
+    </div>
+    <table class="tbl_x7k2q" style="margin-top:30px">
+      <tr><th>Grain</th><th>Used For</th><th>Texture Character</th><th>Source</th></tr>
+      <tr><td>Soft Wheat &ldquo;00&rdquo;</td><td>Tagliatelle, ravioli sheets</td><td>Tender, elastic, silken</td><td>Regional stone mill</td></tr>
+      <tr><td>Durum Semolina</td><td>Fusilli, penne, short cuts</td><td>Firm, golden, ridged</td><td>Regional stone mill</td></tr>
+      <tr><td>Whole Wheat Blend</td><td>Seasonal rustic shapes</td><td>Earthy, nutty, hearty</td><td>Regional stone mill</td></tr>
+      <tr><td>Stone-Ground Farro</td><td>Limited heritage batches</td><td>Deep flavor, coarse crumb</td><td>Single-field partnership</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ===== PAIRING GUIDE ===== -->
+<section class="section_x7k2q alt_x7k2q" id="pairing_x7k2q">
+  <div class="wrap_x7k2q">
+    <h2 class="sec_title_x7k2q">Sauce &amp; Shape Pairing Guide</h2>
+    <p class="sec_sub_x7k2q">A simple map of which sauce loves which shape.</p>
+    <table class="tbl_x7k2q">
+      <tr><th>Pasta Shape</th><th>Best Sauce Match</th><th>Why It Works</th></tr>
+      <tr><td>Tagliatelle ribbons</td><td>Hearty Sunday rag&ugrave;</td><td>Broad ribbons carry the rich meat sauce along their length.</td></tr>
+      <tr><td>Spaghetti nests</td><td>Slow tomato &amp; basil</td><td>Thin strands let the bright tomato coat each one evenly.</td></tr>
+      <tr><td>Fusilli coils</td><td>Basil pesto</td><td>The spiral traps the green paste in every groove.</td></tr>
+      <tr><td>Penne tubes</td><td>Chunky vegetable sauce</td><td>Ridges and hollows hold the pieces of vegetable in place.</td></tr>
+      <tr><td>Ravioli parcels</td><td>Garlic &amp; herb cream</td><td>A gentle cream sauce complements the filling without hiding it.</td></tr>
+      <tr><td>Gnocchi pillows</td><td>Brown butter &amp; sage</td><td>Light dumplings shine against a simple, fragrant butter.</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ===== SEASONAL MENU ===== -->
+<section class="section_x7k2q" id="seasonal_x7k2q">
+  <div class="wrap_x7k2q">
+    <h2 class="sec_title_x7k2q">Seasonal Menu Rotations</h2>
+    <p class="sec_sub_x7k2q">What rolls out of the kitchen depends on the calendar.</p>
+    <div class="grid_x7k2q four_x7k2q">
+      <div class="card_x7k2q"><h3>Spring</h3><p>Pea and mint ravioli, lemon herb cream, and the first tender asparagus folded through short cuts. The kitchen brightens as the days lengthen.</p></div>
+      <div class="card_x7k2q"><h3>Summer</h3><p>Raw tomato and basil tossed through cold spaghetti, garden zucchini bakes, and pesto made from basil cut the same morning.</p></div>
+      <div class="card_x7k2q"><h3>Autumn</h3><p>Pumpkin and sage ravioli, slow root-vegetable rag&ugrave;, and hearty whole-wheat shapes for cooler evenings at the table.</p></div>
+      <div class="card_x7k2q"><h3>Winter</h3><p>Baked trays loaded with cheese, long-simmered meat sauces, and rib-sticking gnocchi in brown butter to warm the cold out of the bones.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== KITCHEN TEAM ===== -->
+<section class="section_x7k2q alt_x7k2q" id="kitchen_x7k2q">
+  <div class="wrap_x7k2q">
+    <h2 class="sec_title_x7k2q">The Kitchen Team</h2>
+    <p class="sec_sub_x7k2q">The hands behind the daily dough.</p>
+    <div class="grid_x7k2q four_x7k2q">
+      <div class="card_x7k2q">
+        <img loading="lazy" src="https://images.pexels.com/photos/5409010/pexels-photo-5409010.jpeg" alt="A cook shaping pasta dough by hand">
+        <h3>Marta &mdash; Head Pasta Maker</h3>
+        <p>Marta runs the morning dough and never lets a sheet through that she would not eat herself. She learned to knead on her grandmother&rsquo;s kitchen table.</p>
+      </div>
+      <div class="card_x7k2q">
+        <img loading="lazy" src="https://images.pexels.com/photos/8473036/pexels-photo-8473036.jpeg" alt="A chef stirring a pot of sauce">
+        <h3>Salvo &mdash; Sauce Cook</h3>
+        <p>Salvo guards the sauce pots, stirring the rag&ugrave; for the better part of a morning and tasting it long before anyone else is allowed near the spoon.</p>
+      </div>
+      <div class="card_x7k2q">
+        <img loading="lazy" src="https://images.pexels.com/photos/8846002/pexels-photo-8846002.jpeg" alt="A baker arranging fresh trays in the oven">
+        <h3>Lia &mdash; Bake Counter</h3>
+        <p>Lia builds the ready trays, layering pasta and sauce and cheese until each one is balanced, then watching the oven for the moment the top turns golden.</p>
+      </div>
+      <div class="card_x7k2q">
+        <img loading="lazy" src="https://images.pexels.com/photos/8105036/pexels-photo-8105036.jpeg" alt="A server preparing fresh pasta portions at the counter">
+        <h3>Tomas &mdash; Counter Hand</h3>
+        <p>Tomas knows every regular by their usual shape and greets each new face with a sample from the morning&rsquo;s first batch, still warm from the water.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PASTA GUIDES ===== -->
+<section class="section_x7k2q" id="guides_x7k2q">
+  <div class="wrap_x7k2q">
+    <h2 class="sec_title_x7k2q">Pasta Guides &amp; Kitchen Notes</h2>
+    <p class="sec_sub_x7k2q">Small lessons we have learned at the counter.</p>
+    <div class="grid_x7k2q two_x7k2q">
+      <div class="card_x7k2q">
+        <h3>How to Cook Fresh Pasta</h3>
+        <p>Fresh pasta is not dried pasta and should not be treated the same. Bring a generous pot of water to a rolling boil, salt it until it tastes faintly of the sea, and drop the pasta in. Fresh strands need only a minute or two &mdash; watch for the moment they float and brighten in color. Drain at once and toss with warm sauce so the strands drink it in.</p>
+        <ul class="minilist_x7k2q">
+          <li>Use more water than you think you need.</li>
+          <li>Salt the water, not the dough.</li>
+          <li>Never oil the water &mdash; it stops sauce from clinging.</li>
+          <li>Save a splash of cooking water to loosen the sauce.</li>
+        </ul>
+      </div>
+      <div class="card_x7k2q">
+        <h3>Storing Fresh Pasta</h3>
+        <p>If you are not cooking it the same day, dust the pasta generously with semolina and lay it flat, not piled, so the pieces do not clump. Kept cool and covered, fresh pasta holds for a day or two. For longer keeping, freeze it spread on a tray first, then bundle it once firm so the strands do not freeze into a single block.</p>
+        <ul class="minilist_x7k2q">
+          <li>Dust with semolina, not flour, to prevent sticking.</li>
+          <li>Keep shapes separated, never heaped.</li>
+          <li>Freeze flat before bundling together.</li>
+          <li>Cook from frozen &mdash; do not thaw first.</li>
+        </ul>
+      </div>
+      <div class="card_x7k2q">
+        <h3>Reading a Good Sauce</h3>
+        <p>A sauce is ready when it coats the back of a spoon and holds a line drawn through it. If it pools and runs, it needs more time. If it seizes and tightens, a spoonful of cooking water will bring it back to a glossy flow. Taste at the end, not the beginning, because salt concentrates as the water leaves.</p>
+      </div>
+      <div class="card_x7k2q">
+        <h3>Choosing Your Shape</h3>
+        <p>Let the sauce choose the shape. Smooth, thin sauces love long strands. Chunky, robust sauces prefer short cuts with ridges and hollows. Cream sauces wrap gently around ribbons, while pesto tucks into coils. When in doubt, ask the counter &mdash; we pair sauce and shape every morning.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="section_x7k2q alt_x7k2q" id="stats_x7k2q">
+  <div class="wrap_x7k2q">
+    <h2 class="sec_title_x7k2q">The Shop in Numbers</h2>
+    <div class="grid_x7k2q four_x7k2q">
+      <div class="card_x7k2q stat_x7k2q"><div class="num_x7k2q">16</div><div class="lbl_x7k2q">Years Rolling</div></div>
+      <div class="card_x7k2q stat_x7k2q"><div class="num_x7k2q">9</div><div class="lbl_x7k2q">Daily Shapes</div></div>
+      <div class="card_x7k2q stat_x7k2q"><div class="num_x7k2q">4</div><div class="lbl_x7k2q">House Sauces</div></div>
+      <div class="card_x7k2q stat_x7k2q"><div class="num_x7k2q">2</div><div class="lbl_x7k2q">Regional Mills</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="section_x7k2q" id="reviews_x7k2q">
+  <div class="wrap_x7k2q">
+    <h2 class="sec_title_x7k2q">What Our Neighbors Say</h2>
+    <p class="sec_sub_x7k2q">Reviews from the people who keep the counter busy.</p>
+    <div class="grid_x7k2q three_x7k2q">
+      <div class="rev_x7k2q">
+        <div class="stars_x7k2q">&starf;&starf;&starf;&starf;&starf;</div>
+        <p>I have been picking up a tray of the baked penne almost every Friday for two years. It tastes like someone actually cared about it, which is rare these days. The crust on top is always perfect.</p>
+        <div class="who_x7k2q">Eleanor M.</div>
+        <div class="loc_x7k2q">Regular since 2021</div>
+      </div>
+      <div class="rev_x7k2q">
+        <div class="stars_x7k2q">&starf;&starf;&starf;&starf;&starf;</div>
+        <p>The fresh tagliatelle with the Sunday rag&ugrave; is the closest I have come to my grandmother&rsquo;s cooking without standing at her stove. The shop smells exactly right the moment you walk in.</p>
+        <div class="who_x7k2q">Daniel R.</div>
+        <div class="loc_x7k2q">Walk-in customer</div>
+      </div>
+      <div class="rev_x7k2q">
+        <div class="stars_x7k2q">&starf;&starf;&starf;&starf;&starf;</div>
+        <p>I stopped in once on a rainy afternoon for something warm and now I cannot pass the street without going in. The basil pesto gnocchi is the thing I order every single time now.</p>
+        <div class="who_x7k2q">Priya S.</div>
+        <div class="loc_x7k2q">Neighborhood visitor</div>
+      </div>
+      <div class="rev_x7k2q">
+        <div class="stars_x7k2q">&starf;&starf;&starf;&starf;&starf;</div>
+        <p>The team at the counter remember my usual shape and have it ready before I finish saying hello. That kind of welcome is worth more than any fancy title a place could put on its door.</p>
+        <div class="who_x7k2q">Marcus B.</div>
+        <div class="loc_x7k2q">Weekly regular</div>
+      </div>
+      <div class="rev_x7k2q">
+        <div class="stars_x7k2q">&starf;&starf;&starf;&starf;&starf;</div>
+        <p>Brought the spinach and ricotta bake to a family dinner and everyone asked where it came from. The filling was light and the cream sauce was rich without being heavy. A real comfort dish.</p>
+        <div class="who_x7k2q">Hannah K.</div>
+        <div class="loc_x7k2q">First-time visitor</div>
+      </div>
+      <div class="rev_x7k2q">
+        <div class="stars_x7k2q">&starf;&starf;&starf;&starf;&starf;</div>
+        <p>You can taste that the flour is fresh and the sauces have been simmered for hours. Nothing tastes rushed and nothing tastes like it came off a conveyor. This is honest, careful cooking.</p>
+        <div class="who_x7k2q">Luca T.</div>
+        <div class="loc_x7k2q">Local food enthusiast</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section_x7k2q alt_x7k2q" id="faq_x7k2q">
+  <div class="wrap_x7k2q">
+    <h2 class="sec_title_x7k2q">Frequently Asked Questions</h2>
+    <p class="sec_sub_x7k2q">A few answers from the counter.</p>
+    <div class="faq_x7k2q">
+      <details><summary>Is the pasta made fresh every day?</summary><p>Yes. The dough is mixed and cut each morning before the shop opens, and we make only as much as we expect to sell that day so nothing sits around.</p></details>
+      <details><summary>Do you offer vegetarian options?</summary><p>Many of our shapes and sauces are vegetarian, including the basil pesto, garlic and herb cream, and all of the ravioli fillings except where noted. Ask the counter for the current vegetarian list.</p></details>
+      <details><summary>Can I order a tray for a gathering?</summary><p>We prepare larger baked trays for gatherings with a day&rsquo;s notice. Tell us how many people you are feeding and we will suggest the right size and shape.</p></details>
+      <details><summary>Where does your flour come from?</summary><p>Our soft wheat and durum semolina come from two regional stone mills that grind slowly and deliver fresh each week. We also use a single-field farro for limited heritage batches.</p></details>
+      <details><summary>How should I store pasta I take home?</summary><p>Dust it with semolina, keep it flat and covered, and cook it within a day or two. For longer keeping, freeze it flat first, then bundle, and cook straight from frozen.</p></details>
+      <details><summary>Do you have a seasonal menu?</summary><p>Yes. Our ready trays and several sauces rotate with the seasons, following what is at its best in the garden and from our growers.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section_x7k2q" id="contact_x7k2q">
+  <div class="wrap_x7k2q">
+    <h2 class="sec_title_x7k2q">Visit &amp; Contact</h2>
+    <p class="sec_sub_x7k2q">Find the shop, the hours, and a friendly face at the counter.</p>
+    <div class="grid_x7k2q two_x7k2q">
+      <div class="card_x7k2q">
+        <h3>Find Us</h3>
+        <p>17 Millstone Lane, Eastwick Quarter, Bridgeport Hollow, CT 06604</p>
+        <p style="margin-top:10px">We are on the corner across from the old grain silo, look for the wooden rolling pin on the door.</p>
+        <ul class="minilist_x7k2q">
+          <li><strong>Mon&ndash;Fri:</strong> 7:30 AM &ndash; 7:00 PM</li>
+          <li><strong>Saturday:</strong> 8:00 AM &ndash; 6:00 PM</li>
+          <li><strong>Sunday:</strong> 9:00 AM &ndash; 3:00 PM</li>
+        </ul>
+      </div>
+      <div class="card_x7k2q">
+        <h3>Reach the Kitchen</h3>
+        <p>Call ahead to reserve a tray or ask about the morning&rsquo;s shapes. The counter is busiest around midday, so mornings and late afternoons are the quietest times to visit.</p>
+        <ul class="minilist_x7k2q">
+          <li><strong>Phone:</strong> <a href="tel:+12035550199" class="phone_x7k2q">+1 (203) 555-0199</a></li>
+          <li><strong>Counter:</strong> <a href="tel:+12035550200">+1 (203) 555-0200</a></li>
+          <li><strong>Fax:</strong> +1 (203) 555-0201</li>
+          <li><strong>Shop ID:</strong> TRV-NOW-0042</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer_x7k2q">
+  <div class="wrap_x7k2q">
+    <div class="grid_x7k2q four_x7k2q">
+      <div>
+        <h4>Trivono Now</h4>
+        <p style="color:#c8b896">A neighborhood pasta shop rolling, cutting, and cooking fresh noodles and sauces every day since 2009.</p>
+        <div class="brand_x7k2q" style="margin-top:10px;font-size:20px">Trivono<span>Now</span></div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#pasta_x7k2q">Pasta Types</a></li>
+          <li><a href="#sauces_x7k2q">House Sauces</a></li>
+          <li><a href="#meals_x7k2q">Ready Meals</a></li>
+          <li><a href="#seasonal_x7k2q">Seasonal Menu</a></li>
+          <li><a href="#guides_x7k2q">Pasta Guides</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>The Shop</h4>
+        <ul>
+          <li><a href="#story_x7k2q">Our Story</a></li>
+          <li><a href="#history_x7k2q">History</a></li>
+          <li><a href="#craft_x7k2q">The Craft</a></li>
+          <li><a href="#kitchen_x7k2q">Kitchen Team</a></li>
+          <li><a href="#reviews_x7k2q">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>17 Millstone Lane</li>
+          <li>Eastwick Quarter, Bridgeport Hollow</li>
+          <li>CT 06604</li>
+          <li><a href="tel:+12035550199">Call: +1 (203) 555-0199</a></li>
+          <li><a href="#contact_x7k2q">Opening Hours</a></li>
+          <li><a href="#" onclick="openModal_x7k2q('pp_x7k2q');return false;">Privacy Policy</a></li>
+          <li><a href="#" onclick="openModal_x7k2q('tos_x7k2q');return false;">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottombar_x7k2q">
+      &copy; 2009&ndash;2025 Trivono Now. All rights reserved. Handmade in our neighborhood kitchen. |
+      <a href="#" onclick="openModal_x7k2q('pp_x7k2q');return false;" style="color:#c8b896">Privacy Policy</a> |
+      <a href="#" onclick="openModal_x7k2q('tos_x7k2q');return false;" style="color:#c8b896">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== PRIVACY POLICY MODAL ===== -->
+<div class="overlay_x7k2q" id="pp_x7k2q" onclick="if(event.target===this)closeModal_x7k2q('pp_x7k2q')">
+  <div class="modal_x7k2q">
+    <button class="close_x7k2q" onclick="closeModal_x7k2q('pp_x7k2q')" aria-label="Close">&times;</button>
+    <h2>Privacy Policy</h2>
+    <p>This Privacy Policy explains how Trivono Now collects, uses, and protects information when you visit our website or contact our shop. By using this site you agree to the practices described here.</p>
+    <h3>Information We Collect</h3>
+    <p>We may collect basic information you provide voluntarily, such as your name and phone number when you call ahead to reserve a tray or place a request. We also collect non-identifying technical information automatically, including browser type, device type, and general location, through standard server logs.</p>
+    <h3>How We Use Information</h3>
+    <p>We use collected information to respond to your inquiries, prepare your orders, improve the content and usability of our website, and understand which sections of the shop and site are most visited. We do not sell or rent your personal information to any third party.</p>
+    <h3>Cookies and Tracking</h3>
+    <p>This website may use cookies and similar technologies to remember preferences and to measure traffic through standard analytics tools. You can adjust your browser settings to refuse cookies, though some features of the site may not function as intended.</p>
+    <h3>Third-Party Services</h3>
+    <p>We may use trusted third-party services for analytics and website performance. These providers may collect limited information governed by their own privacy policies. We do not control their practices and encourage you to review their terms separately.</p>
+    <h3>Data Security</h3>
+    <p>We take reasonable measures to protect the information we hold against unauthorized access, alteration, or loss. However, no method of transmission over the internet is fully secure, and we cannot guarantee absolute safety.</p>
+    <h3>Your Choices</h3>
+    <p>You may choose not to provide personal information, and you may request that we correct or remove any contact details you have shared with us by calling the shop directly during opening hours.</p>
+    <h3>Children&rsquo;s Privacy</h3>
+    <p>Our website is not directed at children under the age of thirteen, and we do not knowingly collect personal information from them. If you believe a child has provided us with details, please contact the shop so we can remove it.</p>
+    <h3>Changes to This Policy</h3>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with a revised date. Continued use of the site after changes constitutes acceptance of the updated policy.</p>
+    <h3>Contact About Privacy</h3>
+    <p>For any questions about this Privacy Policy, call us at +1 (203) 555-0199 during opening hours or visit the shop at 17 Millstone Lane, Eastwick Quarter, Bridgeport Hollow, CT 06604.</p>
+    <p style="margin-top:18px;color:#8a6a45;font-size:13px">Last updated: January 2025</p>
+  </div>
+</div>
+
+<!-- ===== TERMS OF SERVICE MODAL ===== -->
+<div class="overlay_x7k2q" id="tos_x7k2q" onclick="if(event.target===this)closeModal_x7k2q('tos_x7k2q')">
+  <div class="modal_x7k2q">
+    <button class="close_x7k2q" onclick="closeModal_x7k2q('tos_x7k2q')" aria-label="Close">&times;</button>
+    <h2>Terms of Service</h2>
+    <p>These Terms of Service govern your use of the Trivono Now website and the services offered at our shop. By accessing this site or placing a request with us, you agree to the terms outlined below.</p>
+    <h3>Use of the Website</h3>
+    <p>You agree to use this website only for lawful purposes and in a manner that does not infringe the rights of others. You must not attempt to disrupt the site, access restricted areas, or use any automated means to collect content without permission.</p>
+    <h3>Orders and Availability</h3>
+    <p>All fresh pasta, sauces, and ready trays are prepared in limited daily batches. Availability of any shape, sauce, or tray is not guaranteed and may change throughout the day. We reserve the right to decline or adjust any request based on what the kitchen can produce.</p>
+    <h3>No Online Pricing</h3>
+    <p>This website does not display prices. Pricing for fresh pasta, sauces, and ready trays is provided at the shop counter or by phone at the time of your request and may vary with seasonal ingredients and batch size.</p>
+    <h3>Intellectual Property</h3>
+    <p>All content on this website, including text, images, layout, and the Trivono Now name, is the property of the shop or its licensors and is protected by applicable laws. You may not copy, reproduce, or redistribute content without written permission.</p>
+    <h3>Food Allergens</h3>
+    <p>Our kitchen handles wheat, eggs, dairy, and other common allergens. While we take care to avoid cross-contact, we cannot guarantee that any product is completely free of a given allergen. Guests with allergies should inform the counter before ordering.</p>
+    <h3>Pickup and Carry Items</h3>
+    <p>Ready trays and fresh pasta are intended for prompt consumption or proper storage. We are not responsible for items that are not stored or handled appropriately after leaving the shop. Please follow the storage guidance provided at the counter.</p>
+    <h3>Limitation of Liability</h3>
+    <p>To the fullest extent permitted by law, Trivono Now shall not be liable for any indirect, incidental, or consequential damages arising from your use of the website or any product purchased at the shop. Our total liability is limited to the value of the product in question.</p>
+    <h3>External Links</h3>
+    <p>This website may contain links to third-party websites for convenience or reference. We do not endorse and are not responsible for the content, policies, or practices of any external site.</p>
+    <h3>Changes to These Terms</h3>
+    <p>We may revise these Terms of Service at any time. Updated terms take effect when posted on this page. Your continued use of the website after any change indicates your acceptance of the revised terms.</p>
+    <h3>Governing Terms</h3>
+    <p>These terms are governed by the applicable local laws of the jurisdiction in which the shop operates. Any disputes shall be handled in the appropriate local venue.</p>
+    <h3>Contact About Terms</h3>
+    <p>For questions about these Terms of Service, call us at +1 (203) 555-0199 during opening hours or visit the shop at 17 Millstone Lane, Eastwick Quarter, Bridgeport Hollow, CT 06604.</p>
+    <p style="margin-top:18px;color:#8a6a45;font-size:13px">Last updated: January 2025</p>
+  </div>
+</div>
+
+<!-- ===== MINIMAL POPUP SCRIPT (no loading/animation library) ===== -->
+<script>
+function openModal_x7k2q(id){var m=document.getElementById(id);if(m){m.classList.add('show_x7k2q');document.body.style.overflow='hidden';}}
+function closeModal_x7k2q(id){var m=document.getElementById(id);if(m){m.classList.remove('show_x7k2q');document.body.style.overflow='';}}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeModal_x7k2q('pp_x7k2q');closeModal_x7k2q('tos_x7k2q');}});
+</script>
+
+
+
+</body>
+</html>
